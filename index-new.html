@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carolina Brovero — Digital Marketing Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <style>
     /* ===== RESET & BASE ===== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     :root {
       --brown: #6B4C3A;
@@ -40,11 +49,21 @@
       color: var(--white);
     }
 
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     /* ===== TYPOGRAPHY ===== */
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-family: 'Playfair Display', Georgia, serif;
       font-weight: 600;
       line-height: 1.2;
@@ -71,7 +90,7 @@
       opacity: 0;
       transform: translateY(40px);
       transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .reveal.visible {
@@ -79,10 +98,21 @@
       transform: translateY(0);
     }
 
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .reveal-delay-4 {
+      transition-delay: 0.4s;
+    }
 
     /* ===== NAVIGATION ===== */
     nav {
@@ -140,7 +170,9 @@
       transition: width 0.3s ease;
     }
 
-    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
 
     .nav-toggle {
       display: none;
@@ -238,7 +270,9 @@
       transition: transform 0.3s ease;
     }
 
-    .hero-cta:hover svg { transform: translateX(4px); }
+    .hero-cta:hover svg {
+      transform: translateX(4px);
+    }
 
     .hero-image {
       position: relative;
@@ -277,16 +311,26 @@
       color: var(--white);
     }
 
-    .section--maroon .section-label { color: rgba(255, 239, 228, 0.7); }
-    .section--maroon .section-title { color: var(--white); }
+    .section--maroon .section-label {
+      color: rgba(255, 239, 228, 0.7);
+    }
+
+    .section--maroon .section-title {
+      color: var(--white);
+    }
 
     .section--dark {
       background: var(--brown);
       color: var(--cream);
     }
 
-    .section--dark .section-label { color: rgba(255, 239, 228, 0.6); }
-    .section--dark .section-title { color: var(--cream); }
+    .section--dark .section-label {
+      color: rgba(255, 239, 228, 0.6);
+    }
+
+    .section--dark .section-title {
+      color: var(--cream);
+    }
 
     /* ===== ABOUT / BIOGRAPHY ===== */
     .about-grid {
@@ -362,7 +406,9 @@
       margin-bottom: 3rem;
     }
 
-    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
 
     .timeline-item::before {
       content: '';
@@ -428,7 +474,9 @@
       transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .exp-card:hover img { transform: scale(1.05); }
+    .exp-card:hover img {
+      transform: scale(1.05);
+    }
 
     .exp-card-overlay {
       position: absolute;
@@ -591,7 +639,9 @@
       margin-bottom: 6rem;
     }
 
-    .project:last-child { margin-bottom: 0; }
+    .project:last-child {
+      margin-bottom: 0;
+    }
 
     .project-header {
       display: flex;
@@ -791,7 +841,9 @@
       text-underline-offset: 3px;
     }
 
-    footer a:hover { color: var(--cream); }
+    footer a:hover {
+      color: var(--cream);
+    }
 
     /* ===== MOBILE MENU ===== */
     .mobile-menu {
@@ -821,7 +873,9 @@
       transition: color 0.3s ease;
     }
 
-    .mobile-menu a:hover { color: var(--maroon); }
+    .mobile-menu a:hover {
+      color: var(--maroon);
+    }
 
     .mobile-close {
       position: absolute;
@@ -836,34 +890,104 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 968px) {
-      .hero-inner { grid-template-columns: 1fr; text-align: center; }
-      .hero-text .subtitle { margin-left: auto; margin-right: auto; }
-      .hero-image { order: -1; }
-      .hero-image img { margin: 0 auto; max-width: 350px; }
-      .hero-image::after { display: none; }
-      .about-grid { grid-template-columns: 1fr; }
-      .experience-cards { grid-template-columns: 1fr; }
-      .skills-grid { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; text-align: center; }
-      .contact-links { align-items: center; }
-      .contact-decoration { display: none; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-text .subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .hero-image img {
+        margin: 0 auto;
+        max-width: 350px;
+      }
+
+      .hero-image::after {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .contact-links {
+        align-items: center;
+      }
+
+      .contact-decoration {
+        display: none;
+      }
     }
 
     @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .nav-toggle { display: flex; }
-      .mobile-menu { display: flex; }
-      .section { padding: 4rem 1.5rem; }
-      .hero { padding: 6rem 1.5rem 3rem; }
-      .about-highlights { grid-template-columns: 1fr; }
-      .project-header { flex-direction: column; gap: 0.5rem; }
-      .project-number { font-size: 2.5rem; }
-      .cert-grid { grid-template-columns: 1fr; }
-      .project-gallery { grid-template-columns: 1fr; }
-      .project-results { justify-content: center; }
+      .nav-links {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
+      .mobile-menu {
+        display: flex;
+      }
+
+      .section {
+        padding: 4rem 1.5rem;
+      }
+
+      .hero {
+        padding: 6rem 1.5rem 3rem;
+      }
+
+      .about-highlights {
+        grid-template-columns: 1fr;
+      }
+
+      .project-header {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .project-number {
+        font-size: 2.5rem;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .project-results {
+        justify-content: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- NAVIGATION -->
@@ -897,14 +1021,19 @@
       <div class="hero-text">
         <p class="section-label reveal">Welcome to my portfolio</p>
         <h1 class="reveal reveal-delay-1">Ciao, I am<br><span class="accent">Carolina</span></h1>
-        <p class="subtitle reveal reveal-delay-2">Junior Digital Marketing &amp; International Communication Specialist</p>
+        <p class="subtitle reveal reveal-delay-2">Junior Digital Marketing &amp; International Communication Specialist
+        </p>
         <a href="#projects" class="hero-cta reveal reveal-delay-3">
           View my work
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
         </a>
       </div>
       <div class="hero-image reveal reveal-delay-2">
-        <img src="images/biography.jpg" alt="Carolina Brovero">
+        <img src="images/biography-new.jpg" alt="Carolina Brovero">
       </div>
     </div>
   </section>
@@ -916,9 +1045,13 @@
         <div class="about-text reveal">
           <p class="section-label">About me</p>
           <h2 class="section-title">Bridging Languages,<br>Marketing &amp; Cultures</h2>
-          <p>I am a <strong>Junior Digital Marketing Specialist</strong> with a strong passion for languages and international communication. My academic background and international experiences have equipped me with a unique combination of marketing skills and cross-cultural understanding.</p>
-          <p>My goal is to combine these abilities to contribute effectively in <strong>international marketing contexts</strong>, connecting brands with diverse audiences across borders.</p>
-          <p>I am currently based in Italy, actively seeking opportunities to relocate to <strong>Spain</strong>, a country I feel deeply connected to thanks to my Erasmus experience.</p>
+          <p>I am a <strong>Junior Digital Marketing Specialist</strong> with a strong passion for languages and
+            international communication. My academic background and international experiences have equipped me with a
+            unique combination of marketing skills and cross-cultural understanding.</p>
+          <p>My goal is to combine these abilities to contribute effectively in <strong>international marketing
+              contexts</strong>, connecting brands with diverse audiences across borders.</p>
+          <p>I am currently based in Italy, actively seeking opportunities to relocate to <strong>Spain</strong>, a
+            country I feel deeply connected to thanks to my Erasmus experience.</p>
         </div>
         <div>
           <div class="about-highlights">
@@ -955,7 +1088,8 @@
           <div class="timeline-date">2024 — 2026</div>
           <div class="timeline-title">Online Master's — International Marketing, Events and Media</div>
           <div class="timeline-subtitle">Centro Studi Comunicare l'Impresa</div>
-          <div class="timeline-desc">Deepening my expertise in international marketing strategies, event management, and media communication.</div>
+          <div class="timeline-desc">Deepening my expertise in international marketing strategies, event management, and
+            media communication.</div>
         </div>
 
         <div class="timeline-item reveal">
@@ -972,27 +1106,31 @@
           <div class="timeline-date">2018 — 2021</div>
           <div class="timeline-title">Bachelor's Degree — Linguistic Mediation Science</div>
           <div class="timeline-subtitle">University of Turin</div>
-          <div class="timeline-desc">Erasmus+ exchange at Bangor University, Wales (2020–2021). Built a strong foundation in multilingual communication and intercultural mediation.</div>
+          <div class="timeline-desc">Erasmus+ exchange at Bangor University, Wales (2020–2021). Built a strong
+            foundation in multilingual communication and intercultural mediation.</div>
         </div>
       </div>
 
       <!-- International Experience -->
       <div style="margin-top: 5rem;">
         <p class="section-label reveal">International experience</p>
-        <h3 class="section-title reveal" style="font-size: clamp(1.5rem, 3vw, 2.2rem);">Life-Changing Experiences Abroad</h3>
+        <h3 class="section-title reveal" style="font-size: clamp(1.5rem, 3vw, 2.2rem);">Life-Changing Experiences Abroad
+        </h3>
         <div class="experience-cards">
           <div class="exp-card reveal">
             <img src="images/galles.jpg" alt="Wales, UK" loading="lazy">
             <div class="exp-card-overlay">
               <h3>Wales, UK</h3>
-              <p>10 months — English improved to C1 level. Immersed in British culture and academic life at Bangor University.</p>
+              <p>10 months — English improved to C1 level. Immersed in British culture and academic life at Bangor
+                University.</p>
             </div>
           </div>
           <div class="exp-card reveal reveal-delay-1">
             <img src="images/spagna.jpg" alt="Spain" loading="lazy">
             <div class="exp-card-overlay">
               <h3>Cádiz, Spain</h3>
-              <p>10 months — Spanish improved to C1 level. Developed deep intercultural understanding and lasting connections.</p>
+              <p>10 months — Spanish improved to C1 level. Developed deep intercultural understanding and lasting
+                connections.</p>
             </div>
           </div>
         </div>
@@ -1085,7 +1223,8 @@
           <div class="tool-pill"><img src="images/figma.png" alt="Figma"><span>Figma</span></div>
           <div class="tool-pill"><img src="images/wordpress.webp" alt="WordPress"><span>WordPress</span></div>
           <div class="tool-pill"><img src="images/meta.png" alt="Meta"><span>Meta</span></div>
-          <div class="tool-pill"><img src="images/googleanalytics.png" alt="Google Analytics"><span>Google Analytics</span></div>
+          <div class="tool-pill"><img src="images/googleanalytics.png" alt="Google Analytics"><span>Google
+              Analytics</span></div>
         </div>
       </div>
     </div>
@@ -1219,14 +1358,25 @@
         <div class="contact-text reveal">
           <p class="section-label">Get in touch</p>
           <h2>Let's Create<br>Something<br>Together</h2>
-          <p>I'm currently based in Italy and actively seeking opportunities to relocate to Spain. I'd love to connect and explore how we can work together.</p>
+          <p>I'm currently based in Italy and actively seeking opportunities to relocate to Spain. I'd love to connect
+            and explore how we can work together.</p>
           <div class="contact-links">
             <a href="mailto:carolinabrovero@hotmail.com" class="contact-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
               carolinabrovero@hotmail.com
             </a>
-            <a href="https://linkedin.com/in/carolinabrovero" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://linkedin.com/in/carolinabrovero" target="_blank" rel="noopener noreferrer"
+              class="contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
               linkedin.com/in/carolinabrovero
             </a>
           </div>
@@ -1269,4 +1419,5 @@
     }
   </script>
 </body>
+
 </html>
